@@ -4,7 +4,7 @@ import pygwalker as pyg
 import streamlit as st
 import streamlit.components.v1 as components
 
-title = 'Top Informatics PIs'
+title = 'Principal Investigators data aggregated by year (2016-2022)'
 
 st.set_page_config(
     page_title=title,
