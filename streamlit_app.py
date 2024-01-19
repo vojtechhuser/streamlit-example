@@ -14,8 +14,9 @@ st.set_page_config(
 st.title(title)
 st.markdown(
     """
-    pi_name_single is the name of the principal investigator
-    tsum is a sum of total funding
+    pi_name_single is the name of the principal investigator  
+    tsum is a sum of total funding  
+    FY is year of funding
 """
 )
 
