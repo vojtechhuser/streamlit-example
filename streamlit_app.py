@@ -12,6 +12,13 @@ st.set_page_config(
 )
 
 st.title(title)
+st.markdown(
+    """
+    pi_name_single is the name of the principal investigator
+    tsum is a sum of total funding
+"""
+)
+
 st.markdown(" <style> div[class^='block-container'] { padding-top: 2rem; } </style> ", unsafe_allow_html=True)
 df = pd.read_csv('01-PIs.csv.gz')
 pyg_html = pyg.to_html(df)
