@@ -1,6 +1,4 @@
-# Welcome to Streamlit!
+# Grants data
 
-Edit `/streamlit_app.py` to customize this app to your heart's desire. :heart:
+Analyze data about grants obtained from https://reporter.nih.gov/exporter
 
-If you have any questions, checkout our [documentation](https://docs.streamlit.io) and [community
-forums](https://discuss.streamlit.io).
