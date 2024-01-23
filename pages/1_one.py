@@ -1,1 +1,27 @@
 
+import pandas as pd
+import pygwalker as pyg
+
+import streamlit as st
+import streamlit.components.v1 as components
+
+title = 'Principal Investigators data aggregated by year (2016-2022)'
+
+st.set_page_config(
+    page_title=title,
+    layout='wide'
+)
+
+st.title(title)
+st.markdown(
+    """
+    pi_name_single is the name of the principal investigator  
+    tsum is a sum of total funding  
+    FY is year of funding
+"""
+)
+
+st.markdown(" <style> div[class^='block-container'] { padding-top: 2rem; } </style> ", unsafe_allow_html=True)
+df = pd.read_csv('ab.csv.gz')
+pyg_html = pyg.to_html(df)
+components.html(pyg_html, height=1000, scrolling=True)
